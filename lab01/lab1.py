@@ -105,7 +105,7 @@ def result(state: State, new_tuple):
 def h(state : State):
     return -state.coverage()
 
-for N, k in zip([5, 10, 20, 100, 500, 1000], [1.1, 1.1, 1.1, 4, 15, 30]):
+for N, k in zip([5, 10, 20, 100, 500, 1000], [1.1, 1.1, 1.1, 4, 15, 25]):
     GOAL = set(range(N))
     logging.info(f"Goal:\n{GOAL}")
 
